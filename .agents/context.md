@@ -35,6 +35,7 @@ If a `design.md` file exists in the root, it overrides these defaults.
 - Email: hello@hopelifechurch.org
 - ~50 active members
 - Services: Sunday School 9:30 AM, Sunday Worship 10:15 AM, Sunday Evening Service 6:00 PM
+- Affiliation: Southern Baptist Convention (SBC); doctrine follows the Baptist Faith & Message 2000 (BF&M 2000)
 - Mission: love God, love one another, share Christ's hope with the community
 
 ## Site structure
