@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hope Life Church | Jackson, TN</title>
-    <meta name="description" content="Hope Life Church is a welcoming congregation in Jackson, Tennessee. Join us Sunday at 10:00 AM.">
+    <meta name="description" content="Hope Life Church — a welcoming Southern Baptist congregation at 1980 Hollywood Dr, Jackson, TN. Sundays at 9:30, 10:15, and 6:00.">
     <meta property="og:title" content="Hope Life Church | Jackson, TN">
-    <meta property="og:description" content="A warm, welcoming community of believers in Jackson, Tennessee.">
+    <meta property="og:description" content="A warm, close-knit congregation in Jackson, Tennessee 38305. Southern Baptist. Join us Sundays.">
     <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -15,215 +18,511 @@
       "name": "Hope Life Church",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Hope Street",
+        "streetAddress": "1980 Hollywood Dr",
         "addressLocality": "Jackson",
         "addressRegion": "TN",
-        "postalCode": "38301",
+        "postalCode": "38305",
         "addressCountry": "US"
       },
-      "telephone": "+1-731-555-0101",
-      "email": "hello@hopelifechurch.org"
+      "telephone": "+1-731-668-2425",
+      "email": "secretary@poplarheights.com",
+      "sameAs": "https://www.facebook.com/hopelifejackson/"
     }
     </script>
     <style>
-        * {
+        :root {
+            --ink:         #1B2A26;
+            --evergreen:   #25443B;
+            --sand:        #F3EEE3;
+            --paper:       #FFFFFF;
+            --brass:       #B8863B;
+            --brass-dark:  #8F6829;
+        }
+
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
             line-height: 1.6;
-            color: #111;
-            background-color: #fff;
+            color: var(--ink);
+            background-color: var(--sand);
         }
 
-        header {
-            background-color: #fff;
-            color: #111;
-            padding: 3rem 1rem;
+        /* ── NAV ── */
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--evergreen);
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .church-name {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--sand);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--sand);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            opacity: 0.85;
+            transition: opacity 0.2s;
+        }
+
+        .nav-links a:hover { opacity: 1; }
+
+.menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--sand);
+            font-size: 1.5rem;
+            line-height: 1;
+            padding: 0.25rem;
+        }
+
+        /* ── HERO ── */
+
+        .hero {
+            background-color: var(--evergreen);
+            color: var(--sand);
+            padding: 96px 1.5rem;
             text-align: center;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        section {
-            background-color: white;
-            margin-bottom: 2rem;
-            padding: 2rem;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        section h2 {
-            color: #111;
-            font-size: 1.6rem;
-            border-bottom: 2px solid #111;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.25rem;
-        }
-
-        section p {
-            margin-bottom: 0.9rem;
-            line-height: 1.8;
-        }
-
-        section p:last-child {
-            margin-bottom: 0;
-        }
-
-        ul {
-            margin: 0.5rem 0 0.9rem 1.25rem;
-        }
-
-        ul li {
-            margin-bottom: 0.4rem;
-            line-height: 1.7;
-        }
-
-        .service-item {
-            border-left: 3px solid #111;
-            padding-left: 1rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .service-item h3 {
-            color: #111;
-            margin-bottom: 0.2rem;
-        }
-
-        .service-item p {
-            margin-bottom: 0.2rem;
-            color: #444;
-        }
-
-        .contact-block {
-            background-color: #f5f5f5;
-            padding: 1.25rem 1.5rem;
-            border-radius: 4px;
+        .hero h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.15;
             margin-bottom: 1rem;
         }
 
-        .contact-block p {
+        .hero .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--brass);
+            color: var(--paper);
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 2rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover { background-color: var(--brass-dark); }
+
+        /* ── SHARED ── */
+
+        .section-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        .section-heading {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--ink);
+            margin-bottom: 2rem;
+        }
+
+        /* ── WHAT TO EXPECT ── */
+
+        .section-expect {
+            background-color: var(--sand);
+            padding: 64px 1.5rem;
+        }
+
+        .expect-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .expect-card {
+            background-color: var(--paper);
+            border-radius: 8px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 1px 4px rgba(27,42,38,0.08);
+        }
+
+        .expect-card h3 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--evergreen);
+            margin-bottom: 0.5rem;
+        }
+
+        /* ── BELIEFS ── */
+
+        .section-beliefs {
+            background-color: var(--paper);
+            padding: 64px 1.5rem;
+        }
+
+        .beliefs-intro {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .beliefs-list {
+            list-style: none;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .beliefs-list li {
+            padding-left: 1.25rem;
+            border-left: 3px solid var(--brass);
+            line-height: 1.7;
+        }
+
+        /* ── SERVICES ── */
+
+        .section-services {
+            background-color: var(--sand);
+            padding: 64px 1.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card {
+            background-color: var(--paper);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 4px rgba(27,42,38,0.08);
+        }
+
+        .service-card h3 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--evergreen);
             margin-bottom: 0.4rem;
         }
 
-        footer {
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem;
+        .service-card .time {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 0.25rem;
+        }
+
+        .service-card .note {
+            font-size: 0.875rem;
+            color: #555;
+        }
+
+        .services-footnote {
             font-size: 0.9rem;
+            opacity: 0.75;
         }
 
-        footer p {
-            margin: 0.3rem 0;
-            opacity: 0.9;
+        /* ── LOCATION ── */
+
+        .section-location {
+            background-color: var(--paper);
+            padding: 64px 1.5rem;
         }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.9rem;
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+
+        .contact-details p,
+        .visit-details p {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+
+        .contact-details a {
+            color: var(--brass-dark);
+            text-decoration: none;
+        }
+
+        .contact-details a:hover { text-decoration: underline; }
+
+        /* ── FOOTER ── */
+
+        footer {
+            background-color: var(--evergreen);
+            color: var(--sand);
+            padding: 40px 1.5rem;
+        }
+
+        .footer-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+
+        footer h4 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        footer p,
+        footer a {
+            font-size: 0.875rem;
+            line-height: 1.8;
+            opacity: 0.85;
+            color: var(--sand);
+            text-decoration: none;
+            display: block;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .footer-copy {
+            max-width: 1120px;
+            margin: 2rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(243,238,227,0.2);
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        /* ── RESPONSIVE ── */
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background-color: var(--evergreen);
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem 1.5rem 1.5rem;
+                gap: 1rem;
+                border-top: 1px solid rgba(243,238,227,0.15);
             }
 
-            section {
-                padding: 1.5rem;
-            }
+            .nav-links.open { display: flex; }
+
+            .menu-toggle { display: block; }
+
+            .hero h1 { font-size: 2rem; }
+
+            .hero { padding: 64px 1.5rem; }
+
+            .location-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Hope Life Church</h1>
-        <p>Jackson, Tennessee</p>
-    </header>
+    <!-- NAV -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="#" class="church-name">Hope Life Church</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#expect">Visit</a></li>
+            <li><a href="#beliefs">Beliefs</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#location">Find Us</a></li>
+        </ul>
+    </nav>
 
-    <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Welcome">
+        <div class="section-inner">
+            <h1>Hope Life Church</h1>
+            <p class="subtitle">Sunday School at 9:30 &nbsp;&bull;&nbsp; Worship at 10:15 &nbsp;&bull;&nbsp; Evening at 6:00</p>
+            <p class="subtitle">1980 Hollywood Dr, Jackson, Tennessee 38305</p>
+            <a href="#expect" class="btn-primary">Plan Your Visit</a>
+        </div>
+    </section>
 
-        <!-- WELCOME -->
-        <section id="welcome">
-            <h2>Welcome</h2>
-            <p>Hope Life Church is a warm, close-knit congregation in Jackson, Tennessee. We are committed to knowing God, caring for one another, and sharing the hope of Jesus Christ with our community.</p>
-            <p>Whether you are visiting for the first time or looking for a church home, we would love to have you join us.</p>
-        </section>
+    <!-- WHAT TO EXPECT -->
+    <section class="section-expect" id="expect" aria-labelledby="expect-heading">
+        <div class="section-inner">
+            <h2 class="section-heading" id="expect-heading">What to Expect</h2>
+            <div class="expect-grid">
+                <div class="expect-card">
+                    <h3>How long?</h3>
+                    <p>Sunday School runs 9:30&ndash;10:15, then worship from 10:15 to about 11:30 AM. Coffee and fellowship follow.</p>
+                </div>
+                <div class="expect-card">
+                    <h3>My kids?</h3>
+                    <p>Nursery care is available during Sunday worship for ages 0&ndash;3. Sunday School has classes for all ages at 9:30.</p>
+                </div>
+                <div class="expect-card">
+                    <h3>What do I wear?</h3>
+                    <p>Come as you are. No dress code, no pressure. We are a small, close-knit church &mdash; you will be welcomed as you are.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- BELIEFS -->
-        <section id="beliefs">
-            <h2>What We Believe</h2>
-            <p>We are a Bible-believing, Christ-centered church in the Southern Baptist tradition. Our faith is grounded in the Baptist Faith &amp; Message.</p>
-            <ul>
-                <li><strong>Scripture</strong> — The Bible is the inspired, inerrant Word of God — our supreme standard for faith and practice.</li>
-                <li><strong>God</strong> — There is one God, eternally existing as Father, Son, and Holy Spirit.</li>
-                <li><strong>Man</strong> — All people are created in God's image and are of infinite worth, yet all have sinned and stand in need of salvation.</li>
-                <li><strong>Salvation</strong> — Salvation is by grace alone, through faith alone, in Christ alone. Those who trust in Christ are eternally secure in him.</li>
-                <li><strong>Baptism</strong> — We practice believer's baptism by immersion as an act of obedience following salvation, not as a means of it.</li>
-                <li><strong>The Church</strong> — The local church is an autonomous congregation of baptized believers, called to worship, make disciples, and serve the world.</li>
-                <li><strong>Priesthood of Believers</strong> — Every believer has direct access to God through Christ and is responsible to him alone for matters of conscience and faith.</li>
-                <li><strong>Eternity</strong> — We believe in the bodily resurrection of all people — believers to eternal life with God, the unbelieving to eternal separation from him.</li>
+    <!-- BELIEFS -->
+    <section class="section-beliefs" id="beliefs" aria-labelledby="beliefs-heading">
+        <div class="section-inner">
+            <h2 class="section-heading" id="beliefs-heading">What We Believe</h2>
+            <p class="beliefs-intro">We are a Bible-believing, Christ-centered church in the Southern Baptist tradition. Our faith is grounded in the Baptist Faith &amp; Message.</p>
+            <ul class="beliefs-list">
+                <li><strong>Scripture</strong> &mdash; The Bible is the inspired, inerrant Word of God &mdash; our supreme standard for faith and practice.</li>
+                <li><strong>God</strong> &mdash; There is one God, eternally existing as Father, Son, and Holy Spirit.</li>
+                <li><strong>Man</strong> &mdash; All people are created in God&rsquo;s image and are of infinite worth, yet all have sinned and stand in need of salvation.</li>
+                <li><strong>Salvation</strong> &mdash; Salvation is by grace alone, through faith alone, in Christ alone. Those who trust in Christ are eternally secure in him.</li>
+                <li><strong>Baptism</strong> &mdash; We practice believer&rsquo;s baptism by immersion as an act of obedience following salvation, not as a means of it.</li>
+                <li><strong>The Church</strong> &mdash; The local church is an autonomous congregation of baptized believers, called to worship, make disciples, and serve the world.</li>
+                <li><strong>Priesthood of Believers</strong> &mdash; Every believer has direct access to God through Christ and is responsible to him alone for matters of conscience and faith.</li>
+                <li><strong>Eternity</strong> &mdash; We believe in the bodily resurrection of all people &mdash; believers to eternal life with God, the unbelieving to eternal separation from him.</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <!-- SERVICES -->
-        <section id="services">
-            <h2>Service Times</h2>
-
-            <div class="service-item">
-                <h3>Sunday School</h3>
-                <p>9:30 AM &mdash; Classes for all ages</p>
+    <!-- SERVICES -->
+    <section class="section-services" id="services" aria-labelledby="services-heading">
+        <div class="section-inner">
+            <h2 class="section-heading" id="services-heading">Service Times</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Sunday School</h3>
+                    <p class="time">9:30 AM</p>
+                    <p class="note">Classes for all ages</p>
+                </div>
+                <div class="service-card">
+                    <h3>Sunday Worship</h3>
+                    <p class="time">10:15 AM</p>
+                    <p class="note">Main sanctuary &mdash; coffee and fellowship follow</p>
+                </div>
+                <div class="service-card">
+                    <h3>Evening Service</h3>
+                    <p class="time">6:00 PM</p>
+                    <p class="note">Sunday evening</p>
+                </div>
             </div>
+            <p class="services-footnote">All services held on Sundays at 1980 Hollywood Dr, Jackson, TN.</p>
+        </div>
+    </section>
 
-            <div class="service-item">
-                <h3>Sunday Worship</h3>
-                <p>10:15 AM &mdash; Main sanctuary</p>
-                <p>Coffee and fellowship follow the service.</p>
+    <!-- LOCATION -->
+    <section class="section-location" id="location" aria-labelledby="location-heading">
+        <div class="section-inner">
+            <h2 class="section-heading" id="location-heading">Find Us</h2>
+            <div class="location-grid">
+                <div class="contact-details">
+                    <p>
+                        <strong>Hope Life Church</strong><br>
+                        1980 Hollywood Dr<br>
+                        Jackson, Tennessee 38305
+                    </p>
+                    <p>
+                        <a href="tel:+17316682425">(731) 668-2425</a>
+                    </p>
+                    <p>
+                        <a href="mailto:secretary@poplarheights.com">secretary@poplarheights.com</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/hopelifejackson/" target="_blank" rel="noopener">Facebook &rarr;</a>
+                    </p>
+                    <p>
+                        <a href="https://www.google.com/maps/place/Hope+Life+Church/@35.6487942,-88.867487,17z/data=!4m15!1m8!3m7!1s0x887ea4001cfedf4b:0x6527b5011e4067a1!2s1980+Hollywood+Dr,+Jackson,+TN+38305!3b1!8m2!3d35.6487942!4d-88.8649121!16s%2Fg%2F11b8v6kfdg!3m5!1s0x887ea6aaa61eb89f:0xfc27502957b8cc0c!8m2!3d35.6489898!4d-88.8649193!16s%2Fg%2F1v3lqqj9?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>
+                    </p>
+                </div>
+                <div class="visit-details">
+                    <p><strong>Parking</strong><br>Free parking in the front and side lots. Accessible parking near the main entrance.</p>
+                    <p><strong>Accessibility</strong><br>Wheelchair accessible facility and restrooms.</p>
+                    <p><strong>Children</strong><br>Nursery care available during Sunday worship for ages 0&ndash;3.</p>
+                    <p><strong>Office Hours</strong><br>
+                        Mon&ndash;Thu: 8:00 AM &ndash; 5:00 PM<br>
+                        Wed evening: 5:00 &ndash; 7:00 PM<br>
+                        Sun: 9:00 AM &ndash; 12:00 PM<br>
+                        Fri &amp; Sat: Closed
+                    </p>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="service-item">
-                <h3>Sunday Evening Service</h3>
-                <p>6:00 PM</p>
-            </div>
-
-            <p>First time visiting? Come as you are. No dress code, no pressure &mdash; just a warm welcome.</p>
-        </section>
-
-        <!-- LOCATION & CONTACT -->
-        <section id="location">
-            <h2>Find Us</h2>
-
-            <div class="contact-block">
-                <p><strong>Hope Life Church</strong></p>
-                <p>123 Hope Street<br>Jackson, Tennessee 38301</p>
-                <p style="margin-top: 0.75rem;"><strong>Phone:</strong> (731) 555-0101</p>
-                <p><strong>Email:</strong> hello@hopelifechurch.org</p>
-            </div>
-
-            <p><strong>Parking:</strong> Free parking in the front and side lots. Accessible parking near the main entrance.</p>
-            <p><strong>Accessibility:</strong> Wheelchair accessible facility and restrooms.</p>
-            <p><strong>Children:</strong> Nursery care available during Sunday worship for ages 0&ndash;3.</p>
-        </section>
-
-    </main>
-
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Hope Life Church &mdash; Jackson, Tennessee</p>
-        <p>(731) 555-0101 &mdash; hello@hopelifechurch.org</p>
+        <div class="footer-inner">
+            <div>
+                <h4>Hope Life Church</h4>
+                <p>1980 Hollywood Dr</p>
+                <p>Jackson, Tennessee 38305</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p>Sunday School &mdash; 9:30 AM</p>
+                <p>Sunday Worship &mdash; 10:15 AM</p>
+                <p>Evening Service &mdash; 6:00 PM</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <a href="tel:+17316682425">(731) 668-2425</a>
+                <a href="mailto:secretary@poplarheights.com">secretary@poplarheights.com</a>
+                <a href="https://www.facebook.com/hopelifejackson/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Hope Life Church &mdash; Jackson, Tennessee 38305</p>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const links = document.getElementById('nav-links');
+        toggle.addEventListener('click', () => {
+            const open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+    </script>
 
 </body>
 </html>

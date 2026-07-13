@@ -30,9 +30,11 @@ If a `design.md` file exists in the root, it overrides these defaults.
 ## Church facts
 
 - Name: Hope Life Church
-- Location: 123 Hope Street, Jackson, Tennessee 38301
-- Phone: (731) 555-0101
-- Email: hello@hopelifechurch.org
+- Location: 1980 Hollywood Dr, Jackson, Tennessee 38305
+- Phone: (731) 668-2425
+- Email: secretary@poplarheights.com
+- Facebook: https://www.facebook.com/hopelifejackson/
+- Office hours: Mon–Thu 8 AM–5 PM, Wed also 5–7 PM, Sun 9 AM–12 PM, Fri–Sat closed
 - ~50 active members
 - Services: Sunday School 9:30 AM, Sunday Worship 10:15 AM, Sunday Evening Service 6:00 PM
 - Affiliation: Southern Baptist Convention (SBC); doctrine follows the Baptist Faith & Message 2000 (BF&M 2000)
