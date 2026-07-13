@@ -34,7 +34,6 @@ If a `design.md` file exists in the root, it overrides these defaults.
 - Phone: (731) 668-2425
 - Email: secretary@poplarheights.com
 - Facebook: https://www.facebook.com/hopelifejackson/
-- Office hours: none currently
 - ~50 active members
 - Services: Adult Sunday School 9:30 AM, Sunday Worship 10:15 AM, Breakthrough Service 6:00 PM (Sunday evening)
 - No children's ministry currently; kids are welcome in service with parents
