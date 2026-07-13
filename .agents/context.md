@@ -34,9 +34,11 @@ If a `design.md` file exists in the root, it overrides these defaults.
 - Phone: (731) 668-2425
 - Email: secretary@poplarheights.com
 - Facebook: https://www.facebook.com/hopelifejackson/
-- Office hours: Mon–Thu 8 AM–5 PM, Wed also 5–7 PM, Sun 9 AM–12 PM, Fri–Sat closed
+- Office hours: none currently
 - ~50 active members
-- Services: Sunday School 9:30 AM, Sunday Worship 10:15 AM, Sunday Evening Service 6:00 PM
+- Services: Adult Sunday School 9:30 AM, Sunday Worship 10:15 AM, Breakthrough Service 6:00 PM (Sunday evening)
+- No children's ministry currently; kids are welcome in service with parents
+- Capitalize Him/His/He when referring to God or Jesus throughout the site
 - Affiliation: Southern Baptist Convention (SBC); doctrine follows the Baptist Faith & Message 2000 (BF&M 2000)
 - Mission: love God, love one another, share Christ's hope with the community
 
