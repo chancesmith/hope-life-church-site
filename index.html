@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope Life Church - Jackson, Tennessee</title>
+    <title>Hope Life Church | Jackson, TN</title>
+    <meta name="description" content="Hope Life Church is a welcoming congregation in Jackson, Tennessee. Join us Sunday at 10:00 AM.">
+    <meta property="og:title" content="Hope Life Church | Jackson, TN">
+    <meta property="og:description" content="A warm, welcoming community of believers in Jackson, Tennessee.">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Church",
+      "name": "Hope Life Church",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Hope Street",
+        "addressLocality": "Jackson",
+        "addressRegion": "TN",
+        "postalCode": "38301",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-731-555-0101",
+      "email": "hello@hopelifechurch.org"
+    }
+    </script>
     <style>
         * {
             margin: 0;
@@ -21,9 +42,8 @@
         header {
             background-color: #2c5f2d;
             color: white;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         header h1 {
@@ -32,43 +52,12 @@
         }
 
         header p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             opacity: 0.9;
         }
 
-        nav {
-            background-color: #1e4620;
-            padding: 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            gap: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem 1.5rem;
-            display: inline-block;
-            transition: background-color 0.3s;
-            border-right: 1px solid rgba(255,255,255,0.2);
-        }
-
-        nav a:last-child {
-            border-right: none;
-        }
-
-        nav a:hover {
-            background-color: #2c5f2d;
-        }
-
-        nav a.active {
-            background-color: #2c5f2d;
-            font-weight: bold;
-        }
-
         main {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1rem;
         }
@@ -83,58 +72,55 @@
 
         section h2 {
             color: #2c5f2d;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             border-bottom: 2px solid #2c5f2d;
             padding-bottom: 0.5rem;
+            margin-bottom: 1.25rem;
         }
 
         section p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.9rem;
             line-height: 1.8;
         }
 
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0.5rem 0 0.9rem 1.25rem;
+        }
+
+        ul li {
+            margin-bottom: 0.4rem;
+            line-height: 1.7;
+        }
+
         .service-item {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
             border-left: 3px solid #2c5f2d;
+            padding-left: 1rem;
+            margin-bottom: 1.25rem;
         }
 
         .service-item h3 {
             color: #2c5f2d;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.2rem;
         }
 
         .service-item p {
-            margin: 0.3rem 0;
+            margin-bottom: 0.2rem;
             color: #555;
         }
 
-        .location-details {
+        .contact-block {
             background-color: #f0f7f0;
-            padding: 1.5rem;
+            padding: 1.25rem 1.5rem;
             border-radius: 4px;
             margin-bottom: 1rem;
         }
 
-        .location-details p {
-            margin: 0.5rem 0;
-            font-size: 1rem;
-        }
-
-        .map-link {
-            display: inline-block;
-            background-color: #2c5f2d;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            margin-top: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .map-link:hover {
-            background-color: #1e4620;
+        .contact-block p {
+            margin-bottom: 0.4rem;
         }
 
         footer {
@@ -142,127 +128,100 @@
             color: white;
             text-align: center;
             padding: 1.5rem;
-            margin-top: 3rem;
             font-size: 0.9rem;
         }
 
         footer p {
-            margin: 0.5rem 0;
-        }
-
-        .welcome-text {
-            background-color: #f0f7f0;
-            padding: 1.5rem;
-            border-left: 4px solid #2c5f2d;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-            line-height: 1.8;
+            margin: 0.3rem 0;
+            opacity: 0.9;
         }
 
         @media (max-width: 600px) {
             header h1 {
-                font-size: 1.8rem;
-            }
-
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                border-right: none;
-                border-bottom: 1px solid rgba(255,255,255,0.2);
-            }
-
-            nav a:last-child {
-                border-bottom: none;
+                font-size: 1.9rem;
             }
 
             section {
                 padding: 1.5rem;
             }
-
-            main {
-                padding: 1rem;
-            }
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Hope Life Church</h1>
         <p>Jackson, Tennessee</p>
     </header>
 
-    <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="events-staff.html">Events & Staff</a>
-    </nav>
-
     <main>
-        <!-- ABOUT SECTION -->
-        <section id="about">
-            <h2>Welcome to Hope Life Church</h2>
-            <div class="welcome-text">
-                <p>Hope Life Church is a warm, welcoming community of believers committed to growing in faith and serving our Jackson neighbors. Whether you're visiting for the first time or you've been here for years, we'd love to see you in person!</p>
-            </div>
-            <p><strong>Our Mission:</strong> To love God wholeheartedly, love one another deeply, and share Christ's hope with our community.</p>
-            <p><strong>Our Vision:</strong> To be a beacon of hope and transformation in Jackson—a place where everyone feels valued, supported, and connected to Jesus Christ.</p>
-            <p>With approximately 50 active members, we pride ourselves on knowing and caring for one another. You'll find us genuinely interested in your life and your story.</p>
+
+        <!-- WELCOME -->
+        <section id="welcome">
+            <h2>Welcome</h2>
+            <p>Hope Life Church is a warm, close-knit congregation in Jackson, Tennessee. We are committed to knowing God, caring for one another, and sharing the hope of Jesus Christ with our community.</p>
+            <p>Whether you are visiting for the first time or looking for a church home, we would love to have you join us.</p>
         </section>
 
-        <!-- SERVICES SECTION -->
+        <!-- BELIEFS -->
+        <section id="beliefs">
+            <h2>What We Believe</h2>
+            <p>We are a Bible-believing, Christ-centered church. Our faith is rooted in the historic Christian faith as summarized below.</p>
+            <ul>
+                <li><strong>The Bible</strong> — We believe the Bible is the inspired, authoritative Word of God and our final guide for faith and life.</li>
+                <li><strong>God</strong> — We believe in one God, eternally existing in three persons: Father, Son, and Holy Spirit.</li>
+                <li><strong>Jesus Christ</strong> — We believe in the full deity and full humanity of Jesus Christ, his atoning death, and his bodily resurrection.</li>
+                <li><strong>Salvation</strong> — We believe salvation is by grace alone, through faith alone, in Christ alone.</li>
+                <li><strong>The Church</strong> — We believe the local church is called to worship, disciple, and serve — reflecting Christ's love to the world.</li>
+                <li><strong>Eternity</strong> — We believe in the resurrection of the dead and in eternal life for all who trust in Christ.</li>
+            </ul>
+        </section>
+
+        <!-- SERVICES -->
         <section id="services">
-            <h2>Our Services</h2>
-            <p>Join us for worship! We offer a mix of traditional and contemporary worship in a relaxed, welcoming environment.</p>
-
-            <div class="service-item">
-                <h3>Sunday Worship Service</h3>
-                <p><strong>Time:</strong> 10:00 AM – 11:15 AM</p>
-                <p><strong>Location:</strong> Main sanctuary</p>
-                <p><strong>What to Expect:</strong> Worship, prayer, Scripture teaching, and community. Coffee and fellowship time follows the service.</p>
-            </div>
-
-            <div class="service-item">
-                <h3>Wednesday Evening Prayer & Study</h3>
-                <p><strong>Time:</strong> 6:30 PM – 7:45 PM</p>
-                <p><strong>Location:</strong> Fellowship hall</p>
-                <p><strong>What to Expect:</strong> Group prayer, Bible study, and time to deepen relationships with others in the church.</p>
-            </div>
+            <h2>Service Times</h2>
 
             <div class="service-item">
                 <h3>Sunday School</h3>
-                <p><strong>Time:</strong> 9:00 AM (before main service)</p>
-                <p><strong>Location:</strong> Various classrooms</p>
-                <p><strong>What to Expect:</strong> Classes for all ages—kids, teens, young adults, and adults. Find the right fit for your age group!</p>
+                <p>9:30 AM &mdash; Classes for all ages</p>
             </div>
 
-            <p><strong>First time visiting?</strong> No need to dress up, bring anything, or know what to expect—just come as you are. We're here to welcome you!</p>
+            <div class="service-item">
+                <h3>Sunday Worship</h3>
+                <p>10:15 AM &mdash; Main sanctuary</p>
+                <p>Coffee and fellowship follow the service.</p>
+            </div>
+
+            <div class="service-item">
+                <h3>Sunday Evening Service</h3>
+                <p>6:00 PM</p>
+            </div>
+
+            <p>First time visiting? Come as you are. No dress code, no pressure &mdash; just a warm welcome.</p>
         </section>
 
-        <!-- LOCATION SECTION -->
+        <!-- LOCATION & CONTACT -->
         <section id="location">
             <h2>Find Us</h2>
-            <div class="location-details">
+
+            <div class="contact-block">
                 <p><strong>Hope Life Church</strong></p>
                 <p>123 Hope Street<br>Jackson, Tennessee 38301</p>
-                <p><strong>Phone:</strong> (731) 555-0101</p>
+                <p style="margin-top: 0.75rem;"><strong>Phone:</strong> (731) 555-0101</p>
                 <p><strong>Email:</strong> hello@hopelifechurch.org</p>
             </div>
 
-            <h3 style="color: #2c5f2d; margin-bottom: 1rem;">Getting Here</h3>
-            <p><strong>Parking:</strong> Free, ample parking available in the front and side lots. Accessible parking is near the main entrance.</p>
-            <p><strong>Accessibility:</strong> Our facility is wheelchair accessible. Accessible restrooms are available.</p>
-            <p><strong>Children:</strong> Nursery care is available during Sunday worship service for children ages 0–3.</p>
-
-            <a href="https://maps.google.com/?q=123+Hope+Street,+Jackson,+Tennessee+38301" target="_blank" class="map-link">
-                → Open in Google Maps
-            </a>
+            <p><strong>Parking:</strong> Free parking in the front and side lots. Accessible parking near the main entrance.</p>
+            <p><strong>Accessibility:</strong> Wheelchair accessible facility and restrooms.</p>
+            <p><strong>Children:</strong> Nursery care available during Sunday worship for ages 0&ndash;3.</p>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 Hope Life Church. All rights reserved.</p>
-        <p>Jackson, Tennessee | (731) 555-0101 | hello@hopelifechurch.org</p>
+        <p>&copy; 2025 Hope Life Church &mdash; Jackson, Tennessee</p>
+        <p>(731) 555-0101 &mdash; hello@hopelifechurch.org</p>
     </footer>
+
 </body>
 </html>
