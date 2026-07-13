@@ -180,6 +180,10 @@ Options when ready:
 
 Church preference: no Google Forms — consider whether GA4 fits that same instinct before recommending it.
 
+## Copyright year
+
+The footer copyright year must match the current year. Check and update it on every edit session. Current year: 2026.
+
 ## Editing rules
 
 - Keep all styles in `css/styles.css` (or inline `<style>` block if file not yet extracted)
