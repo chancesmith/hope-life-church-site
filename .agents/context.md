@@ -185,6 +185,19 @@ Church preference: no Google Forms — consider whether GA4 fits that same insti
 
 The footer copyright year must match the current year. Check and update it on every edit session. Current year: 2026.
 
+## Agent behavior rules
+
+- Do not add features not explicitly requested (Give button, nav logo, office hours, analytics, etc.) without confirming first.
+- When implementing a design spec, flag any elements that require third-party setup (payment platform, analytics, streaming service) before building them.
+- For copy/headline changes, offer 3-4 options with previews rather than guessing and iterating.
+- Scope changes to exactly what was asked — do not expand to adjacent elements without permission.
+
+## Logo
+
+- File: `images/hlc-logo.png` — white-on-black PNG
+- Use `mix-blend-mode: screen` to drop the black background on dark surfaces
+- Currently used in: hero h1, footer copyright bar
+
 ## Editing rules
 
 - Keep all styles in `css/styles.css` (or inline `<style>` block if file not yet extracted)
