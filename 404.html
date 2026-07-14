@@ -8,87 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --ink:        #111111;
-            --evergreen:  #1a1a1a;
-            --sand:       #f5f5f5;
-            --paper:      #ffffff;
-            --brass:      #555555;
-            --brass-dark: #222222;
-        }
-
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', system-ui, sans-serif;
-            font-size: 1rem;
-            line-height: 1.6;
-            color: var(--ink);
-            background-color: var(--sand);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1.5rem;
-        }
-
-        .card {
-            background: var(--paper);
-            border-radius: 12px;
-            padding: 3rem 2.5rem;
-            max-width: 520px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .eyebrow {
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--brass);
-            margin-bottom: 1.25rem;
-        }
-
-        h1 {
-            font-family: 'Fraunces', Georgia, serif;
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 1.2;
-            margin-bottom: 1.25rem;
-        }
-
-        .body-text {
-            color: #444;
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .btn-primary {
-            display: inline-block;
-            background-color: var(--brass);
-            color: var(--paper);
-            padding: 0.875rem 2rem;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 500;
-            text-decoration: none;
-            margin-top: 2rem;
-            transition: background-color 0.2s;
-        }
-
-        .btn-primary:hover { background-color: var(--brass-dark); }
-
-        @media (max-width: 480px) {
-            .card { padding: 2rem 1.5rem; }
-            h1 { font-size: 1.6rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="/shared.css">
+    <link rel="stylesheet" href="/card-page.css">
 </head>
 <body>
     <div class="card">
