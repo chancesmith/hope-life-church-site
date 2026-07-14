@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/chance.smith/wip/hope-life-church-site status)",
+      "Bash(git -C /Users/chance.smith/wip/hope-life-church-site diff HEAD)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ]
+  }
+}
