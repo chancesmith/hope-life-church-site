@@ -1,31 +1,34 @@
-# Hope Life Church Site — Agent Context
+# Hope Life Church Site — Agent Instructions
+
+This is the canonical rules file for any AI agent working in this repo (Claude Code, GitHub Copilot, or otherwise). `CLAUDE.md` imports this file directly. `.github/copilot-instructions.md` points here and adds only Copilot-specific notes.
 
 ## Project
 
 Static website for Hope Life Church, Jackson, Tennessee. Church-owned: GitHub repo + Netlify hosting. No CMS, no proprietary platform, no monthly platform fees.
 
+## Workflow: design precedes implementation
+
+`DESIGN.md` is a prerequisite, not documentation written after the fact. Before changing `index.html`, `shared.css`, or `card-page.css` in any way that affects layout, color, type, or section structure:
+
+1. Update `DESIGN.md` first to describe the intended end state.
+2. Then implement the site change to match it.
+3. Commit the `DESIGN.md` change together with (or before) the implementation — never after.
+
+Content-only edits (fixing a typo, updating a phone number, changing a service time) don't require a `DESIGN.md` change. Anything that changes what the site looks like or how it's structured does.
+
 ## Tech constraints
 
-- Plain HTML5, CSS3, minimal JavaScript only
+- Plain HTML5, CSS3, minimal JavaScript only — there is currently no JavaScript in the site at all
 - No frameworks, no build tools, no package.json
-- File structure: `css/`, `images/`, `js/` subdirectories
+- File structure: `shared.css` and `card-page.css` live at repo root (not in a `css/` folder); `images/` is the only subdirectory; no `js/` folder exists
 - Semantic HTML, accessible patterns (labels, headings, ARIA where needed, proper contrast)
 - Responsive: mobile-first, works on phone/tablet/desktop
 
 ## Design system
 
-- Primary color: `#2c5f2d` (forest green)
-- Dark variant: `#1e4620`
-- Light tint: `#f0f7f0`
-- Body text: `#333`
-- Muted text: `#555`
-- Background: `#f9f9f9`
-- Font stack: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`
-- Tone: warm, welcoming — not corporate
-- Card style: white bg, `border-radius: 4px`, `box-shadow: 0 1px 3px rgba(0,0,0,0.1)`
-- Section headings: green with 2px green bottom border
+Colors, fonts, spacing, and layout tokens are defined in `DESIGN.md` §3 (Design tokens) and implemented in `shared.css`'s `:root` block. Do not hardcode or repeat those values here — read them from those two files directly, since duplicating them is exactly how this file went stale before.
 
-If a `design.md` file exists in the root, it overrides these defaults.
+**Current state: grayscale placeholder.** `shared.css` right now uses neutral grayscale values (`--ink: #111111`, `--evergreen: #1a1a1a`, `--sand: #f5f5f5`, `--brass: #555555`) with the intended brand colors noted in comments next to each token. The real brand palette has not been finalized — do not "restore" or introduce a colored palette on your own initiative. If asked to explore color options, treat it as a `DESIGN.md`-first change per the Workflow section above, and keep it easy to back out of (a branch, not straight to `main`).
 
 ## Church facts
 
@@ -48,6 +51,11 @@ If a `design.md` file exists in the root, it overrides these defaults.
 | File | Purpose | Status |
 |---|---|---|
 | `index.html` | Welcome, Beliefs, Services, Location/Contact | Live |
+| `404.html` | Not found page | Live |
+| `poplarheights.html` | Redirect landing for old Poplar Heights domain | Live |
+| `shared.css` | Variables, reset, body base, btn-primary | Live |
+| `card-page.css` | Centered card layout (used by 404 + poplarheights) | Live |
+| `sitemap.xml` | Sitemap for hopelifechurch.com | Live |
 | `events.html` | Dated/time-limited upcoming events | Planned |
 | `ministries.html` | Ongoing ministry programs (listing only) | Planned |
 | `contact.html` | Dedicated contact form | Planned |
@@ -141,7 +149,7 @@ Apply to every page:
 <meta property="og:title" content="Page Name | Hope Life Church">
 <meta property="og:description" content="[Same as meta description]">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://hopelifechurch.org/page.html">
+<meta property="og:url" content="https://hopelifechurch.com/page.html">
 
 <!-- Local business schema — place in <head> of index.html only -->
 <script type="application/ld+json">
@@ -157,9 +165,9 @@ Apply to every page:
     "postalCode": "38301",
     "addressCountry": "US"
   },
-  "telephone": "+1-731-555-0101",
-  "email": "hello@hopelifechurch.org",
-  "url": "https://hopelifechurch.org"
+  "telephone": "+1-731-668-2425",
+  "email": "secretary@poplarheights.com",
+  "url": "https://hopelifechurch.com"
 }
 </script>
 ```
@@ -183,7 +191,7 @@ Church preference: no Google Forms — consider whether GA4 fits that same insti
 
 ## Copyright year
 
-The footer copyright year must match the current year. Check and update it on every edit session. Current year: 2026.
+The footer copyright year must match the current year. Check and update it on every edit session.
 
 ## Agent behavior rules
 
@@ -200,7 +208,7 @@ The footer copyright year must match the current year. Check and update it on ev
 
 ## Editing rules
 
-- Keep all styles in `css/styles.css` (or inline `<style>` block if file not yet extracted)
+- Shared styles live in `shared.css` (variables, reset, body, btn-primary) and `card-page.css` (centered card layout). Page-specific styles stay in an inline `<style>` block on each HTML file.
 - Nav must stay consistent across all pages; active page gets `class="active"` on its nav link
 - Footer is identical on every page
 - Do not introduce external dependencies, CDN links, or JS frameworks
