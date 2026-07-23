@@ -4,6 +4,17 @@ This site is plain HTML files stored in a GitHub repository and published automa
 
 ---
 
+## New to This? Start Here
+
+1. **Get access.** Ask whoever manages the repo to add you as a collaborator (see "Inviting Others to Help" below). Without this, you can't save changes, only suggest them.
+2. **Pick how you want to make changes**, based on budget and comfort level:
+   - Want an AI to make the change for you, hands-off, and $10/month is fine → **Option 1** (GitHub Copilot Agent). This is the recommended path for most people.
+   - Don't want to pay anything, comfortable following on-screen steps → **Option 2** (edit directly on GitHub).
+   - Already use an AI chatbot (Claude, ChatGPT, etc.) day-to-day and just want help wording or coding the change → **Option 3** (describe it, then paste the result in).
+3. **If the change involves colors, fonts, or layout** (not just wording or a date/time), read `DESIGN.md` first, or share it with whichever AI you're using — see Design Reference below for why.
+
+---
+
 ## Seeing Your Changes Live
 
 After any change is made to the **main** branch, Netlify automatically rebuilds and publishes the site. This usually takes about 60 seconds. Just visit [hopelifechurch.com](https://hopelifechurch.com) and refresh the page.
@@ -12,11 +23,11 @@ If a change was made to a separate branch (not main), it will not appear on the 
 
 ---
 
-## Two Ways to Make Changes
+## Three Ways to Make Changes
 
-### Option 1 — Ask an AI Agent (easiest, ~$10/month)
+### Option 1 — Ask GitHub Copilot's Agent (recommended, ~$10/month)
 
-GitHub has a built-in AI agent that can make changes for you. No coding required.
+GitHub has a built-in AI agent that can make changes for you. No coding required. This is the priority option — start here unless cost is a barrier.
 
 1. Go to the repo on GitHub.
 2. Click the **Agents** tab.
@@ -46,15 +57,19 @@ You do not need to install anything. If you can edit a Word document, you can ed
 
 ---
 
-### Option 3 — Describe a Change to an AI, Then Paste It In
+### Option 3 — Describe a Change to Any AI Chatbot, Then Paste It In (free)
 
-Open [Claude.ai](https://claude.ai) and describe what you want changed. For example:
+Already use an AI chatbot — [Claude.ai](https://claude.ai), ChatGPT, GitHub Copilot Chat, or similar? Describe what you want changed. For example:
 
 > "Update the Sunday service time from 10:00 AM to 10:30 AM."
 
 The AI will give you updated code. Then use Option 2 above to paste it into the file on GitHub.
 
 If you share the `DESIGN.md` file with the AI, it will match the existing style more accurately.
+
+---
+
+**Using Claude Code or another terminal-based coding agent?** These can edit and commit changes directly, similar to Option 1, but they require a technical setup (a terminal, a local copy of the repo, GitHub authentication). That's a good fit for a technical volunteer already comfortable with git — not most contributors. If your church has someone like that, they can work directly in the repo instead of using the steps above; `AGENTS.md` has the rules they should follow.
 
 ---
 
