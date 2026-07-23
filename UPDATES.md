@@ -1,75 +1,84 @@
 # How to Update This Website
 
-This site is plain HTML files stored in a GitHub repository and published automatically to the web via Netlify. You do not need to know how to code to make updates.
+This site is plain files that update automatically when changes are saved. You don't need to know how to code.
 
 ---
 
 ## New to This? Start Here
 
-1. **Get access.** Ask whoever manages the repo to add you as a collaborator (see "Inviting Others to Help" below). Without this, you can't save changes, only suggest them.
-2. **Pick how you want to make changes**, based on budget and comfort level:
-   - Want an AI to make the change for you, hands-off, and $10/month is fine → **Option 1** (GitHub Copilot Agent). This is the recommended path for most people.
-   - Don't want to pay anything, comfortable following on-screen steps → **Option 2** (edit directly on GitHub).
-   - Already use an AI chatbot (Claude, ChatGPT, etc.) day-to-day and just want help wording or coding the change → **Option 3** (describe it, then paste the result in).
-3. **If the change involves colors, fonts, or layout** (not just wording or a date/time), read `DESIGN.md` first, or share it with whichever AI you're using — see Design Reference below for why.
+1. **Get access.** Ask whoever manages the site to add you (see "Inviting Others to Help" below). Without this you can suggest changes but not save them.
+2. **Pick your path**, based on budget and comfort:
+   - Want an AI to make the change for you, hands-off, $10/month is fine → **Option 1**. Recommended for most people.
+   - Free, comfortable following on-screen steps → **Option 2**.
+   - Already chat with an AI day-to-day and just want help wording or coding the change → **Option 3**.
+3. **Changing colors, fonts, or layout** (not just wording or a time)? Read `DESIGN.md` first, or share it with your AI. See Design Reference below.
+
+---
+
+## New to AI? Try It Risk-Free First
+
+Before your first real edit, ask an AI something small to get a feel for it. Try one of these in Claude.ai, ChatGPT, or GitHub Copilot Chat:
+
+> "Here's a file from my church's website. Can you explain what this section does?" (paste in a chunk of `index.html`)
+
+> "If I wanted to change the Sunday service time, what would I need to tell you?"
+
+None of these change the site, so there's nothing to get wrong. Once it feels comfortable, move to Option 1, 2, or 3 below.
 
 ---
 
 ## Seeing Your Changes Live
 
-After any change is made to the **main** branch, Netlify automatically rebuilds and publishes the site. This usually takes about 60 seconds. Just visit [hopelifechurch.com](https://hopelifechurch.com) and refresh the page.
+Saved changes go live in about 60 seconds. Visit [hopelifechurch.com](https://hopelifechurch.com) and refresh.
 
-If a change was made to a separate branch (not main), it will not appear on the live site until that branch is merged in. A collaborator with access can review and approve the change first — this is the safer workflow when you're not sure about a change.
+If a change was saved for review instead of going live right away, it won't appear until someone with access approves it. That's the safer path when you're not sure about a change.
 
 ---
 
 ## Three Ways to Make Changes
 
-### Option 1 — Ask GitHub Copilot's Agent (recommended, ~$10/month)
+### Option 1: Ask GitHub Copilot's Agent (recommended, ~$10/month)
 
-GitHub has a built-in AI agent that can make changes for you. No coding required. This is the priority option — start here unless cost is a barrier.
+An AI built into GitHub that makes changes for you. No coding required.
 
 1. Go to the repo on GitHub.
 2. Click the **Agents** tab.
-3. Describe what you want changed in plain language. For example:
+3. Describe what you want in plain language, e.g.:
    > "Update the Sunday service time to 10:30 AM in the services section."
-4. The agent will automatically create a new branch with the change.
-5. A collaborator can then review it and merge it into the live site when ready.
+4. The agent saves the change for review.
+5. Someone with access reviews it and publishes it live.
 
-This option requires a GitHub Copilot subscription (~$10/month per account). If cost is a barrier, Option 2 is always free.
-
----
-
-### Option 2 — Edit Files Directly on GitHub (free)
-
-1. Go to the repo on GitHub (ask your site contact for the link if you don't have it).
-2. Click the **Code** tab.
-3. Click the file you want to edit — usually `index.html`.
-4. Click the pencil icon (✏️) in the top-right corner of the file.
-5. Find the text you want to change and edit it.
-6. Scroll to the bottom. You have two choices:
-
-   **Commit directly to main** — the change goes live in about 60 seconds. Use this for small, confident corrections (fixing a typo, updating a phone number).
-
-   **Create a new branch** — the change is saved but does not go live yet. Someone with access can review it first and decide when to merge it. This is the safer choice when you're not sure.
-
-You do not need to install anything. If you can edit a Word document, you can edit this site.
+Requires a Copilot subscription (~$10/month). If cost is a barrier, Option 2 is free.
 
 ---
 
-### Option 3 — Describe a Change to Any AI Chatbot, Then Paste It In (free)
+### Option 2: Edit Files Directly on GitHub (free)
 
-Already use an AI chatbot — [Claude.ai](https://claude.ai), ChatGPT, GitHub Copilot Chat, or similar? Describe what you want changed. For example:
+1. Go to the repo on GitHub (ask your site contact for the link if needed).
+2. Click **Code**, then click the file you want (usually `index.html`).
+3. Click the pencil icon (✏️) top-right.
+4. Edit the text.
+5. Scroll down and choose:
+   - **Save directly**: goes live in about 60 seconds. Use for small, confident fixes (typo, phone number).
+   - **Save for review**: someone with access checks it before it goes live. Safer when unsure.
+
+No install needed. If you can edit a Word document, you can edit this site.
+
+---
+
+### Option 3: Describe the Change to Any AI Chatbot, Then Paste It In (free)
+
+Already use Claude.ai, ChatGPT, GitHub Copilot Chat, or similar? Describe the change, e.g.:
 
 > "Update the Sunday service time from 10:00 AM to 10:30 AM."
 
-The AI will give you updated code. Then use Option 2 above to paste it into the file on GitHub.
+The AI gives you updated code. Paste it in using Option 2 above.
 
-If you share the `DESIGN.md` file with the AI, it will match the existing style more accurately.
+Share the `DESIGN.md` file with the AI so it matches the site's style.
 
 ---
 
-**Using Claude Code or another terminal-based coding agent?** These can edit and commit changes directly, similar to Option 1, but they require a technical setup (a terminal, a local copy of the repo, GitHub authentication). That's a good fit for a technical volunteer already comfortable with git — not most contributors. If your church has someone like that, they can work directly in the repo instead of using the steps above; `AGENTS.md` has the rules they should follow.
+**Technical volunteer using Claude Code or a terminal-based coding tool?** They can edit and publish directly, similar to Option 1, but it needs a technical setup. Good fit if your church has someone comfortable with that. `AGENTS.md` has the rules they should follow.
 
 ---
 
@@ -77,10 +86,10 @@ If you share the `DESIGN.md` file with the AI, it will match the existing style 
 
 | What you want to change | Where to find it |
 |---|---|
-| Church name, tagline | `index.html` — top of file |
-| Beliefs / statement of faith | `index.html` — Beliefs section |
-| Service times | `index.html` — Services section |
-| Address, phone, email | `index.html` — Location section |
+| Church name, tagline | `index.html`, top of file |
+| Beliefs / statement of faith | `index.html`, Beliefs section |
+| Service times | `index.html`, Services section |
+| Address, phone, email | `index.html`, Location section |
 | Page colors, fonts | `shared.css` |
 | Images | `images/` folder |
 
@@ -88,35 +97,31 @@ If you share the `DESIGN.md` file with the AI, it will match the existing style 
 
 ## Adding Images
 
-1. Keep images under 300 KB. Use [squoosh.app](https://squoosh.app) to compress — free, runs in your browser.
-2. Upload the image to the `images/` folder in the GitHub repo.
+1. Keep images under 300 KB. Use [squoosh.app](https://squoosh.app) to compress. Free, runs in your browser.
+2. Upload the image to the `images/` folder in the repo.
 3. Reference it in HTML: `<img src="images/your-photo.jpg" alt="Describe the photo">`
 
 ---
 
 ## Inviting Others to Help
 
-Anyone can be added as a collaborator so they can make changes too.
-
 1. Go to the repo on GitHub.
-2. Click the **Settings** tab.
-3. Click **Collaborators** in the left menu.
-4. Enter the person's GitHub username or email and send the invite.
+2. Click **Settings** → **Collaborators**.
+3. Enter the person's GitHub username or email and send the invite.
 
-We want this site to be something the whole church can contribute to. The more hands, the better.
+The more hands, the better.
 
 ---
 
 ## What NOT to Change
 
-- Do not delete `<!DOCTYPE html>` or lines at the very top of the file.
-- Do not remove `<head>`, `<body>`, or closing tags.
-- If something breaks, use GitHub's history to restore a previous version: go to the file, click **History**, and find the last working version.
+- Don't delete anything at the very top of `index.html` or its opening/closing structure.
+- If something breaks, GitHub keeps history. Open the file, click **History**, and restore the last working version.
 
 ---
 
 ## Design Reference
 
-See `DESIGN.md` for color codes, font choices, and layout decisions. Share that file with an AI when asking for design changes so it matches the existing style.
+See `DESIGN.md` for color codes, font choices, and layout decisions. Share it with an AI when asking for design changes so it matches the existing style.
 
-If you're asking for a look-and-feel change (new colors, fonts, layout, section order), ask the AI to update `DESIGN.md` as part of that same request, not just the page itself. `DESIGN.md` is meant to describe the site's intended design before the code matches it — if it goes out of date, the next person (human or AI) is working from a wrong picture of the site.
+Asking for a look-and-feel change (new colors, fonts, layout, section order)? Ask the AI to update `DESIGN.md` as part of the same request, not just the page. Otherwise the next person is working from an outdated picture of the site.
